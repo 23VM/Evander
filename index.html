@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Digital Académico - Jairo Evander Martínez Ortega</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Botón de Cambio de Tema (Claro / Oscuro) -->
+    <button id="themeToggle" class="theme-toggle-btn" title="Cambiar Tema Claro/Oscuro"> Tema</button>
+
+    <!-- Bordes Tecnológicos Animados -->
+    <div class="tech-border top"></div>
+    <div class="tech-border bottom"></div>
+    <div class="tech-border left"></div>
+    <div class="tech-border right"></div>
+
+    <!-- Transición de Chispas y Cables -->
+    <div class="spark-transition-overlay" id="sparkOverlay">
+        <div class="spark-line horizontal"></div>
+        <div class="spark-line vertical"></div>
+        <div class="spark-effect">⚡ ESTABLECIENDO CONEXIÓN ELÉCTRICA... ⚡</div>
+    </div>
+
+    <!-- CARÁTULA FORMAL -->
+    <section id="caratula-overlay" class="caratula-container">
+        <div class="caratula-card">
+            <div class="glow-effect"></div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbFqQuORJhdVCGHpQr7yN6OT-iblvARywRM2IZUDqOpJRKYdvi04j-1uo&s=10" alt="Logo Institución" class="logo-institucion">
+            <h1>UNIDAD EDUCATIVA "CARMEN MORA DE ENCALADA"</h1>
+            <h2>PORTAFOLIO DIGITAL ACADÉMICO - SOPORTE E DISEÑO WEB</h2>
+            
+            <div class="student-info">
+                <p><strong>Estudiante:</strong> Jairo Evander Martínez Ortega</p>
+                <p><strong>Curso / Paralelo:</strong> 2do de Informática B - Soporte</p>
+                <p><strong>Ubicación:</strong> Pasaje, El Oro, Ecuador</p>
+                <p><strong>Docente:</strong> Patricio Medina </p>
+            </div>
+
+            <!-- Interruptor Eléctrico de Acceso -->
+            <div class="switch-control-box">
+                <span class="switch-label"> Interruptor Principal del Sistema:</span>
+                <label class="switch-toggle">
+                    <input type="checkbox" id="mainSwitch">
+                    <span class="slider-round"></span>
+                </label>
+                <p class="switch-status" id="switchStatusText">Estado: APAGADO (Desconectado)</p>
+            </div>
+
+            <button id="btnAbrir" class="btn-abrir disabled" disabled> ACCEDER AL PORTAFOLIO TÉCNICO</button>
+        </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL DEL PORTAFOLIO -->
+    <main id="main-content" class="main-content hidden">
+        <header class="portfolio-header">
+            <button id="btnVolverCaratula" class="btn-volver">◀ Volver a Carátula</button>
+            <span class="badge-tech">⚡ PORTAFOLIO TÉCNICO OFICIAL</span>
+            <h1>FUNDAMENTOS, CIRCUITOS Y APLICACIONES ELECTRÓNICAS</h1>
+            <p>Documentación formal de prácticas de taller, análisis matemático, prototipado y simulación virtual.</p>
+        </header>
+
+        <!-- Sección 1 -->
+        <section class="content-section">
+            <div class="text-content">
+                <h2>1. Normas de Seguridad y Equipamiento en el Laboratorio</h2>
+                <p>Antes de manipular cualquier circuito eléctrico o fuente de alimentación, es indispensable cumplir rigurosamente con los protocolos de seguridad industrial y escolar:</p>
+                <ul class="formal-list">
+                    <li><strong>Prevención de Riesgos:</strong> Evitar anillos, manillas o elementos metálicos que puedan generar cortocircuitos accidentales.</li>
+                    <li><strong>Uso de Herramientas Aisladas:</strong> Destornilladores y pinzas con certificación de aislamiento eléctrico.</li>
+                    <li><strong>Inspección Visual:</strong> Revisar el estado de cables, protoboards y fuentes de voltaje antes de energizar el sistema.</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="https://imgv2-2-f.scribdassets.com/img/document/238798330/original/fc61916059/1?v=1" alt="Normas de Seguridad y Laboratorio" class="detail-trigger" data-topic="seguridad">
+                <span class="img-caption">⚡ Clic para ver información detallada</span>
+            </div>
+        </section>
+
+        <!-- Sección 2 -->
+        <section class="content-section reverse">
+            <div class="text-content">
+                <h2>2. Ley de Ohm y Componentes Pasivos</h2>
+                <p>La Ley de Ohm es la piedra angular para comprender el comportamiento de la corriente en los circuitos:</p>
+                <ul class="formal-list">
+                    <li><strong>Voltaje (V):</strong> Diferencia de potencial medida en Voltios (V).</li>
+                    <li><strong>Corriente (I):</strong> Flujo de carga eléctrica medido en Amperios (A).</li>
+                    <li><strong>Resistencia (R):</strong> Oposición al flujo de electrones medida en Ohmios ($\Omega$).</li>
+                    <li><strong>Código de Colores:</strong> Método estándar para identificar el valor ohmico y la tolerancia de las resistencias fijas.</li>
+                </ul>
+                <div class="formula-box">
+                    <code>V = I × R  |  I = V / R  |  R = V / I</code>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcZ0572xk-CryOPK7rNPccwubsvF4psUYiVNR8Qae_wl_KqlsmCcKH3HWf&s=10" alt="Ley de Ohm y Resistencias" class="detail-trigger" data-topic="ohm">
+                <span class="img-caption">⚡ Clic para ver información detallada</span>
+            </div>
+        </section>
+
+        <!-- Sección 3 -->
+        <section class="content-section">
+            <div class="text-content">
+                <h2>3. Leyes de Kirchhoff (Nodos y Mallas)</h2>
+                <p>Para redes complejas de corriente continua (DC), se aplican las leyes de conservación:</p>
+                <ul class="formal-list">
+                    <li><strong>Ley de Corrientes de Kirchhoff (LCK - Nodos):</strong> La suma de corrientes que entran a un nodo es igual a la suma de corrientes que salen ($\sum I_{entrantes} = \sum I_{salientes}$).</li>
+                    <li><strong>Ley de Tensiones de Kirchhoff (LTK - Mallas):</strong> En cualquier lazo cerrado, la sumatoria de las caídas de tensión es igual a la tensión total aplicada.</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="https://culturayciencia.diariocronicas.com/wp-content/uploads/2020/07/Leyes-de-Kirchhoff.jpg" alt="Leyes de Kirchhoff" class="detail-trigger" data-topic="kirchhoff">
+                <span class="img-caption">⚡ Clic para ver información detallada</span>
+            </div>
+        </section>
+
+        <!-- Sección 4 -->
+        <section class="content-section reverse">
+            <div class="text-content">
+                <h2>4. Prototipado Físico y Multímetro Digital</h2>
+                <p>El uso de la protoboard facilita el diseño experimental rápido sin necesidad de soldadura permanente:</p>
+                <ul class="formal-list">
+                    <li><strong>Pistas Internas:</strong> Los rieles laterales distribuyen la alimentación principal, mientras que las filas centrales conectan componentes en bloques de 5 terminales.</li>
+                    <li><strong>Mediciones con Multímetro:</strong> Configuración correcta para medir voltaje en paralelo, corriente en serie y continuidad eléctrica.</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="https://m.media-amazon.com/images/I/71xuHAJ3zWL._AC_UF1000,1000_QL80_.jpg" alt="Protoboard y Multímetro" class="detail-trigger" data-topic="protoboard">
+                <span class="img-caption">⚡ Clic para ver información detallada</span>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE VIDEO CON INTERRUPTOR -->
+        <section class="video-unlock-section">
+            <h2>Demostración Práctica y Video Explicativo</h2>
+            <p>Para visualizar el contenido audiovisual del circuito desarrollado, active el interruptor de seguridad del sistema:</p>
+            
+            <div class="switch-control-box video-switch">
+                <span class="switch-label"> Interruptor Multimedia:</span>
+                <label class="switch-toggle">
+                    <input type="checkbox" id="videoSwitch">
+                    <span class="slider-round"></span>
+                </label>
+                <p class="switch-status" id="videoStatusText">Estado: CIRCUITO ABIERTO (Video Bloqueado)</p>
+            </div>
+
+            <div class="video-wrapper hidden-video" id="videoWrapper">
+                <div class="video-responsive">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RH9eLKXq2qk" title="Video de Electrónica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="success-msg">¡Circuito cerrado con éxito! Visualizando contenido audiovisual.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p> Unidad Educativa "Carmen Mora de Encalada" | Portafolio Académico de <strong>Jairo Evander Martínez Ortega</strong> | Pasaje, Ecuador</p>
+        </footer>
+    </main>
+
+    <!-- SECCIÓN DE DETALLE AMPLIADO (Al hacer clic en las imágenes) -->
+    <section id="detail-section" class="detail-section hidden">
+        <div class="detail-card">
+            <div class="detail-header-bar">
+                <button id="btnVolverPortafolio" class="btn-volver">◀ Volver al Portafolio</button>
+                <span class="badge-tech">⚡ ANÁLISIS TÉCNICO AVANZADO</span>
+            </div>
+            <h1 id="detailTitle">Título del Tema</h1>
+            <div id="detailContent" class="detail-body-content">
+                <!-- Contenido dinámico inyectado por JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
